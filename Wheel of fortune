@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     
-        <link rel="stylesheet" href="/Proyecto/index.css">
+        <link rel="stylesheet" href="index.css">
     
     <link rel="apple-touch-icon" sizes="57x57" href="/Proyecto/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/Proyecto/favicon/apple-icon-60x60.png">
@@ -50,7 +50,7 @@
         <img width="555px" height="360px" src="https://i.ytimg.com/vi/1giXl4-_Cxs/maxresdefault.jpg" alt=""><figcaption>El carrousel simboliza las repetidas reencarnaciones que tuvo que sufrir Alessas.</figcaption>
     </figure>
     <figure>
-        <img width="555px" height="360px" src="/Proyecto/Imagenes/sh1-fan.webp" alt=""><figcaption>Los ventiladores gigantes que aparecen desde el primer juego pueden verse también como una representación de este ciclo.</figcaption>
+        <img width="555px" height="360px" src="/Imagenes/sh1-fan.webp" alt=""><figcaption>Los ventiladores gigantes que aparecen desde el primer juego pueden verse también como una representación de este ciclo.</figcaption>
     </figure>
     <h3>¿Incluso el desarrollo de la historia es inevitablemente similar?</h3>
     <p class="p-1">La historia del primer juego comienza con una pesadilla, pasa a traves de un parque de diversiones y concluye en <a href="https://silenthill.fandom.com/wiki/Nowhere" target="_blank">"nowhere"</a>. El tercer juego también comienza con una pesadilla y llega a su final en una iglesa de forma similar al primer juego. Queda en la interpretación de cada jugador si estos patrones similares en ambas historias pueden relacionarse a este fenomeno de "ciclos" que se repiten.</p>
@@ -72,7 +72,7 @@
         <img width="555px" height="360px" src="https://external-preview.redd.it/jb4glfsGRY3b8vxyfvhtUEcP2bjGRnjEWlKx2uWxj9c.png?auto=webp&s=afb60bcb8628f41be12eda4b7511feda02b51a4b" alt=""><figcaption>Cada vez que el jugador carga una partida en el mundo real, Heather regresa a la vida en el juego.</figcaption>
     </figure>
     <figure>
-        <img width="555px" height="360px" src="/Proyecto/Imagenes/ColdDrinks02.webp" alt=""><figcaption>Este simbolo de la organización religiosa significa caridad y resurrección, así también como presente, pasado y futuro.<figcaption>
+        <img width="555px" height="360px" src="/Imagenes/ColdDrinks02.webp" alt=""><figcaption>Este simbolo de la organización religiosa significa caridad y resurrección, así también como presente, pasado y futuro.<figcaption>
     </figure>
     <div class="comment">
         
