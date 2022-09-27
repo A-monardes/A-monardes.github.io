@@ -1,0 +1,114 @@
+body{
+    background-color: #eeeeee;
+    margin-left: 388px;
+}
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    color: beige;
+    background-color: black;
+    width: 1144px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    letter-spacing: 0px;
+    line-height: 46.8px;
+}
+
+#crimson {
+    color: #CC0000;
+}
+h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25.5px;
+    color: #333333;
+    line-height: 39px;
+    margin-top: 20px;
+}
+.p-1 {
+    width: 1144px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 30.6px;
+    margin-top: 20px;
+}
+/* img {
+    width: 360px ;
+    height: 260px;
+} */
+
+
+figure{
+    display: inline-block;
+    border: 1px black;
+    margin: 9px;
+    vertical-align: top;
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px black;
+    text-align: left;
+    width: 360px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+}
+.p-2 {
+    width: 552px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30.6px;
+    color: #333333;
+}
+a:hover{
+    color: darkred;
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
+li{
+    margin-bottom: 10px;
+    width: 1140px;
+    line-height: 30.6px;
+}
+#cremat {
+    float: left;
+    margin-bottom: 20px;
+}
+.p-3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 30.6px;
+    color: #333333;
+    margin-right: 358px;
+    margin-left: 570px;
+    margin-bottom: 180px;
+}
+table, th, td {
+    border: 1px solid;
+}
+th, td {
+    padding: 8px;
+}
+table {
+    width: 1144px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+td {
+    height: 60px;
+}
+tr:nth-child(even) {
+    background-color: #ffe1e1;
+}
