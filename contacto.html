@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Flor es siendo</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar" id="inicio">
+                <a class="nav-intro a-bar no-deco" href="/index.html">Flor es Siendo</a>
+                <ul class="nav-bar">
+                    <li>
+                        <a class="a-bar no-deco" href="/contacto.html">Contactanos</a>
+                    </li>
+                    <li>
+                        <a class="a-bar no-deco" href="#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a class="a-bar no-deco" href="#rese">Reseñas</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Detalles de contacto:</h2>
+        <form action="https://formspree.io/f/xvgoajbn" method="post">
+            <fieldset>
+
+                <legend>Información personal</legend>
+                
+                <label for="nombre">Nombre:</label>
+                <input class="input-perso" type="text" name="nombre" required placeholder="Nombre completo">
+
+                <label for="mail">Correo electrónico:</label>
+                <input class="input-perso" type="email" name="mail">
+            </fieldset>
+
+            <fieldset>
+
+                <legend>¿Que te gustaría decirnos?</legend>
+
+                <label for="mensajito">Escribinos tu mensaje:</label>
+                <textarea class="input-mensaje" name="mensajito" rows="4" id="mensaje" required placeholder="Tu mensaje..."></textarea>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Preferencia sobre tus plantas</legend>
+                <div>
+                    <label for="plantas">¿Te gustaría aprender a cuidar mejor tus plantas?</label>
+                    <input type="checkbox" name="plantas" value="Si">
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Tus suculentas</legend>
+
+                <label for="suculenta">¿Que tipo de suculenta es la que te interesa más?</label>
+                <select class="input-suculentas" name="suculenta" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="crasulacea">Crasuláceas</option>
+                    <option value="cactus">Cactus</option>
+                    <option value="aloe">Aloe</option>
+                    <option value="agave">Agaves</option>
+                    <option value="asfodelo">Asfodelos</option>
+                </select>
+            </fieldset>
+            <button type="submit" class="submit-btn">Enviar respuesta</button>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <a class="logo-footer" href="#inicio">Flor es siendo</a>
+            <p class="foot">Agustin Monardes Casas - 2024</p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85903.21987182084!2d-58.47714187959221!3d-34.55503911889829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57a4147c5c7%3A0xfc930bf72fdf871f!2zSmFyZMOtbiBKYXBvbsOpcw!5e0!3m2!1ses-419!2sar!4v1730826920910!5m2!1ses-419!2sar" width="400" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <p>Buscanos en:</p>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>
+</body>
+</html>
