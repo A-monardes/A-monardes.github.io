@@ -5,27 +5,41 @@ body{
 main{
     font-family: 'Poppins';
 }
+button{
+    border: none;
+    background-color: grey;
+    color: whitesmoke;
+    border-radius: 14px;
+    padding: 6px;
+    margin-left: 20px;
+}
 .no-deco{
     text-decoration: none;
     color: whitesmoke;
     font-weight: 500;
 }
+.navbar{
+    background-color: darkolivegreen !important;
+}
+.navbar-brand{
+    font-family: 'Playwrite GB S';
+    font-size: 28px;
+    font-style: italic;
+}
+
+.nav-item{
+    background-color: darkolivegreen;
+    margin: 0px;
+    padding: 5px;
+}
 .hero{
     background-image: url(/images-promp/hero-trans.jpg);
     background-size: cover;
-    height:85vh;
+    height:91vh;
     width: 100vw;
     margin: auto;
 }
-.nav-bar {
-    display: flex;
-    background-color: darkolivegreen;
-    list-style: none;
-    font-size: 24px;
-    align-items: center;
-    justify-content: space-between;
-    height: 15vh;
-}
+
 .a-bar{
     color: whitesmoke;
     padding: 20px;
@@ -36,13 +50,7 @@ main{
     color: rgb(219, 219, 219);
     transition: 0.5s;
 }
-.nav-intro{
-    align-self: center;
-    font-size: 38px;
-    font-family: 'Playwrite GB S';
-    font-style: italic;
-    white-space: nowrap;
-}
+
 .hero-text{
     font-weight: 300;
     font-size: 3.5vh;
@@ -65,6 +73,7 @@ h1{
     font-family: 'Poppins';
     font-size: 24px;
     color: whitesmoke;
+    margin-left: 0px;
 }
 h2{
     text-align: center;
@@ -80,17 +89,66 @@ h2{
     margin: auto;
 }
 .card-producto{
-    margin: 15px;
+    margin: 5px;
     background-color: whitesmoke;
     border-radius: 5%;
-    width: 250px;
-    height: 420px;
+    width: 285px;
+    height: 440px;
     padding: 20px;
+    position: relative;
+}
+.detalles{
+    display: none;
+    margin-top: -255px;
+    background-color: antiquewhite;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 10;
+    height: fit-content;
+}
+.detalles p {
+    margin: 0px;
+}
+
+h3{
+    font-size: 22px;
+    padding: 10px;
 }
 .img-producto{
-    width: 250px;
-    height: 250px;
+    width: 245px;
+    height: 245px;
     border-radius: 5%;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-detalles{
+    background-color: antiquewhite;
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: black;
+    margin-left: 0px;
+}
+.btn-carrito{
+    margin-top: 10px;
+    background-color: darkolivegreen;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    color: whitesmoke;
+    margin-left: 0px;
 }
 .pro-aside{
     background-image: url(/images-promp/aside.jpg);
@@ -98,22 +156,65 @@ h2{
     font-size: 30px;
     background-size: cover;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.h-aside{
+    font-size: 35px;
+}
+h5{
+    font-size: 15px;
+}
+li{
+    padding: 5px;
+    width: max-content;
+    list-style-type: none;
+}
+#cart-dropdown{
+    padding: 10px;
+}
+#vaciarCarrito{
+    background-color: rgb(77, 77, 77);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px;
+}
+#vaciarCarrito:hover{
+    background-color: rgb(201, 201, 201);
+    color: black;
+}
+#continuarCompra{
+    background-color: olivedrab;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px;
+}
+#continuarCompra:hover{
+    background-color: darkolivegreen;
+}
+
+.nav-link{
+    font-size: 20px;
 }
 button:hover{
     background-color: rgb(54, 72, 24);
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     cursor: pointer;
+    color: whitesmoke;
 }
 #rese{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background: linear-gradient(to bottom, antiquewhite, whitesmoke)
+    background: linear-gradient(to bottom, antiquewhite, whitesmoke);
+    padding-bottom: 50px;
 }
 .card-rese{
     background-color: whitesmoke;
     padding: 3vh;
     border-radius: 5%;
     box-shadow: 5px 5px 15px 0px;
+    margin: 15px;
 }
 .card-info-rese{
     display: flex;
@@ -184,6 +285,14 @@ footer{
     color: rgb(255, 0, 0);
 }
 
+.totalCarrito{
+    background-color: rgb(78, 78, 78);
+    padding: 6px;
+    border-radius: 10px;
+}
+
+
+
 
 fieldset{
     display: flex;
@@ -191,7 +300,9 @@ fieldset{
     width: 600px;
     margin: auto;
     margin-top: 50px;
-    padding: 3vw;
+    padding: 15px;
+    border: solid 3px gainsboro;
+    border-radius: 15px;
 }
 form{
     background: linear-gradient(to bottom, antiquewhite, whitesmoke);
@@ -213,7 +324,7 @@ label{
     font-family: 'Poppins';
     border: 0px;
     max-height: 200px;
-    width: 600px;;
+    width: 500px;
 }
 .input-suculentas{
     font-family: 'Poppins';
@@ -237,6 +348,15 @@ legend{
     font-weight: 600;
     margin-top: 30px;
 }
+#mensaje-error{
+    color: red;
+}
+.mt-5{
+    padding: 20px;
+}
+.checkout-total{
+    margin-top: 20px;
+}
 
 @media (max-width: 1000px){
     #rese {
@@ -255,12 +375,9 @@ legend{
         font-size: 15px;
     }
     .btn-hero{
-        font-size: 16px;
+        font-size: 14px;
         height: 50px;
-        width: 180px;
-    }
-    .h-aside{
-        font-size: 30px;
+        width: 160px;
     }
 
     h1{
@@ -281,14 +398,25 @@ legend{
         font-size: 10px;
     }
 
-    .nav-bar{
-        font-size: 18px;
+    .img-producto{
+        width: 160px;
+        height: 160px;
     }
-    .nav-intro{
-        font-size: 26px;
+    .card-producto{
+        height: 350px;
     }
-    .nav-bar{
-        height: 70px;
+    h3{
+        font-size: 15px;
+    }
+    .btn-detalles{
+        width: 150px;
+    }
+    .btn-carrito{
+        width: 180px;
+    }
+
+    .h-aside{
+        font-size: 25px;
     }
 }
 
@@ -299,25 +427,26 @@ legend{
     }
     .card-producto{
         display: flex;
-        width: 290px;
-        height: 130px;
-        padding: 8px;
+        width: 320px;
+        height: 160px;
+        padding: 5px;
         margin: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
     .img-producto{
-        width: 100px;
-        height: 130px;
+        width: 130px;
+        height: 150px;
     }
     figcaption{
         font-size: 12px;
         margin-left: 16px;
+        width: 160px;
     }
     .btn-hero{
         font-size: 16px;
         height: 50px;
-        width: 180px;
+        width: 160px;
     }
     .h-aside{
         font-size: 30px;
@@ -328,9 +457,6 @@ legend{
 
     .pro-aside{
         align-items: center;
-    }
-    .btn-hero{
-        font-size: 14px;
     }
     .h-aside{
         font-size: 20px;
@@ -350,13 +476,6 @@ legend{
         margin-top: 20px;
         margin-bottom: 15px;
     }
-
-    .nav-bar{
-        flex-direction: column;
-        height:160px;
-        padding: 8px;
-        justify-content: start;
-    }
     .a-bar{
         padding: 0px;
     }
@@ -365,9 +484,22 @@ legend{
         width: 300px;
     }
     .input-mensaje{
-        max-width: 300px; 
+        max-width: 270px; 
         height: 400px;
     }
+
+    .btn-detalles{
+        width: 120px;
+    }
+    .btn-carrito{
+        width: 140px;
+        font-size: 14px;
+    }
+    .detalles{
+        margin-left: -50px;
+        margin-top: -260px;
+    }
+
 }
 
 @media (max-width: 500px){
@@ -390,6 +522,11 @@ legend{
     h2{
         font-size: 30px;
     }
+
+    h1{
+        font-size: 32px;
+    }
+}
 
     h1{
         font-size: 32px;
